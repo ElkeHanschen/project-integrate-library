@@ -1,5 +1,3 @@
-to change!
-
 # Project include external library
 
 ### What is this about?
