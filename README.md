@@ -1,4 +1,4 @@
-# Project include external library
+# Project include external library within simple HTML, CSS, JS
 
 ### What is this about?
 
@@ -12,9 +12,18 @@
 - tutorial video [Integrating with other people's libraries](https://frontendmasters.com/courses/web-development-v2/integrating-with-other-people-s-libraries/)
 - tutorial course notes [Integrating with other people's libraries](https://btholt.github.io/intro-to-web-dev-v2/libraries)
 
+### How to run this?
+
+- clone this repo
+- `cd` into project
+- open `index.html` in your browser of choice (in my case, built in/for Chrome)
+
 ### Heads-up
 
-- I quickly coded the desired spring animation along during the course, please see, why I mention this here below the code
+- I quickly coded the desired spring animation along during the course (see code-along code bit below)
+- apparently the popmotion website has been changed since the recording of the tutorial, so there's no code bits to copy & paste of there to complete the same task as in this tutorial (meaning, nothing to VERY quickly find and adapt)
+- a quick search resulted in [popmotion on codepen](https://codepen.io/popmotion), I did not take the time to dive deep in there
+- code below shows code used in tutorial:
 
 ```
 const { styler, spring, listen, pointer, value } = window.popmotion;
@@ -41,12 +50,3 @@ listen(document, 'mouseup touchend')
         }).start(ballXY);
     });
 ```
-
-- apparently the popmotion website has been changed since the recording of the tutorial, so there are no codepens linked in it any longer, it’s also not THAT intuitive how to quickly (like, within 2 minutes) grab JavaScript animation code off of this website
-- a quick search resulted in [popmotion on codepen](https://codepen.io/popmotion) but I did not take the time to search if the (up to date) spring animation is in there
-
-### How to run this?
-
-- clone this repo
-- `cd` into project
-- open `index.html` in your browser of choice (in my case, built in/for Chrome)
